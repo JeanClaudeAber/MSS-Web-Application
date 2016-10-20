@@ -10,6 +10,7 @@ namespace MSS.MVC.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.isIndex = true;
             return View();
         }
 
