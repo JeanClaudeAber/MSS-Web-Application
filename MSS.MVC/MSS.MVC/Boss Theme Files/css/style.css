@@ -11609,7 +11609,7 @@ Onepage Homepages --------------------*/
 }
 
 .form-box-container {
-	position: relative;
+	/*position: relative;*/
 	margin-bottom:40px;
 }
 
@@ -11636,7 +11636,7 @@ label.error {
 	}
 
 	.form-box {
-		position: absolute;
+		/*position: absolute;*/
 		width:460px;
 		top:-640px;
 		right:15px;

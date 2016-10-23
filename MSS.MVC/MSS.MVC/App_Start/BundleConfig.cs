@@ -42,7 +42,8 @@ namespace MSS.MVC
                       "~/Boss Theme Files/js/jquery.countTo.js",
                       "~/Boss Theme Files/js/jquery.validate.min.js",
                       "~/Boss Theme Files/js/contact.js",
-                      "~/Boss Theme Files/js/main.js"));
+                      "~/Boss Theme Files/js/main.js",
+                      "~/Custom Scripts/myScript.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Boss Theme Files/css/animate.css",
@@ -51,7 +52,8 @@ namespace MSS.MVC
                       "~/Boss Theme Files/css/style.css",
                       "~/Boss Theme Files/css/revslider/revslider-index33.css",
                       "~/Boss Theme Files/css/colors/darkblue.css",
-                      "~/Content/font-awesome.min.css"));
+                      "~/Content/font-awesome.min.css",
+                      "~/Custom Styles/myStyles.css"));
         }
     }
 }

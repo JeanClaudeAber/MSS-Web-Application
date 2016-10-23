@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Home</title>
+    <title>MSS - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -20,110 +20,288 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600italic,700italic,600,800,300,700,800italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="icon" type="image/png" href="../MSS Images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../Boss Theme Files/images/icons/faviconx57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Boss Theme Files/images/icons/faviconx72.png">
+
 </head>
 <body>
-    <!--HEADER code-->
-    <header id="header" class="sticky-menu" role="banner">
-        <div class="collapse navbar-white" id="header-search-form">
-            <div class="container">
-                <form class="navbar-form animated fadeInDown">
-                    <input type="search" id="s" name="s" class="form-control" placeholder="Search in here...">
-                    @*<button type="submit" title="Search"><i class="fa fa-search"></i></button>*@
-                </form>
-            </div><!-- End .container -->
-        </div><!-- End #header-search-form -->
-        <nav class="navbar navbar-white animated-dropdown navbar-smaller btt-dropdown" role="navigation">
-            <div class="container">
-                <div class="navbar-header" style="margin-left:-200px;">
-                    <button type="button" class="navbar-toggle pull-right collapsed" data-toggle="collapse" data-target="#main-navbar-container">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand clear-padding-left text-uppercase" href="index.html" title="Boss - Multipurpose Premium Html5 Template">Malta Street Shufflers</a>
-                    <!--<button type="button" class="navbar-btn btn-icon pull-right last visible-sm visible-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>-->
-                </div><!-- End .navbar-header -->
-                <div class="collapse navbar-collapse" id="main-navbar-container">
-                    @*<button type="button" class="navbar-btn btn-icon navbar-left last  hidden-sm hidden-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>*@
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="dropdown active megamenu-container">
-                            <a href="#top" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home<span class="angle"></span></a>
-                            <div class="dropdown-menu megamenu" role="menu">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <ul>
-                                                <li><a href="index.html">Home - Version 1</a></li>
-                                                <li><a href="index2.html">Home - Version 2</a></li>
-                                                <li><a href="index3.html">Home - Version 3</a></li>
-                                                <li><a href="index4.html">Home - Version 4</a></li>
-                                                <li><a href="index5.html">Home - Version 5</a></li>
-                                                <li><a href="index6.html">Home - Version 6</a></li>
-                                                <li><a href="index7.html">Home - Version 7</a></li>
-                                                <li><a href="index8.html">Home - Version 8</a></li>
-                                                <li><a href="index9.html">Home - Version 9</a></li>
-                                                <li><a href="index10.html">Home - Version 10</a></li>
-                                            </ul>
-                                        </div><!-- End .col-sm-3 -->
-                                        <div class="col-sm-3">
-                                            <ul>
-                                                <li><a href="index11.html">Home - Version 11</a></li>
-                                                <li><a href="index12.html">Home - Version 12</a></li>
-                                                <li><a href="index13.html">Home - Portfolio 1</a></li>
-                                                <li><a href="index14.html">Home - Portfolio 2</a></li>
-                                                <li><a href="index15.html">Home - Portfolio 3</a></li>
-                                                <li><a href="index16.html">Home - Portfolio 4</a></li>
-                                                <li><a href="index17.html">Home - Portfolio 5</a></li>
-                                                <li><a href="index18.html">Home - Portfolio 6</a></li>
-                                                <li><a href="index19.html">Home - Portfolio 7</a></li>
-                                                <li><a href="index20.html">Home - Blog 1</a></li>
-                                            </ul>
-                                        </div><!-- End .col-sm-3 -->
-                                        <div class="col-sm-3">
-                                            <ul>
-                                                <li><a href="index21.html">Home - Blog 2</a></li>
-                                                <li><a href="index22.html">Home - Blog 3</a></li>
-                                                <li><a href="index23.html">Home - Magazine 1</a></li>
-                                                <li><a href="index24.html">Home - Magazine 2</a></li>
-                                                <li><a href="index25.html">Home - Shop 1</a></li>
-                                                <li><a href="index26.html">Home - Shop 2</a></li>
-                                                <li><a href="index27.html">Home - Shop 3</a></li>
-                                                <li><a href="index28.html">Home - Shop 4</a></li>
-                                                <li><a href="index29.html">Home - Landing 1</a></li>
-                                                <li><a href="index30.html">Home - Landing 2</a></li>
-                                            </ul>
-                                        </div><!-- End .col-sm-3 -->
-                                        <div class="col-sm-3">
-                                            <ul>
-                                                <li><a href="index31.html">Home - Landing 3</a></li>
-                                                <li><a href="index32.html">Home - Onepage 1</a></li>
-                                                <li><a href="index33.html">Home - Onepage 2</a></li>
-                                                <li><a href="index34.html">Home - Onepage 3</a></li>
-                                                <li><a href="index35.html">Home - Onepage 4</a></li>
-                                            </ul>
-                                        </div><!-- End .col-sm-3 -->
-                                    </div><!-- End .row -->
-                                </div><!-- End .container -->
-                            </div><!-- End .megamenu -->
-                        </li>
-                        <li><a href="#aboutus">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#contactus">Contact Us</a></li>
-                        <li class="visible-lg"><a href="//wrapbootstrap.com/user/eony" target="_blank">Buy Now!</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </header><!-- End #header -->
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <!--Insert Footer Code here.-->
-        </footer>
+    <div id="wrapper">
+        
+        <!--HEADER code-->
+        <header id="header" class="sticky-menu" role="banner">
+            <div class="collapse navbar-white" id="header-search-form">
+                <div class="container">
+                    <form class="navbar-form animated fadeInDown">
+                        <input type="search" id="s" name="s" class="form-control" placeholder="Search in here...">
+                        @*<button type="submit" title="Search"><i class="fa fa-search"></i></button>*@
+                    </form>
+                </div><!-- End .container -->
+            </div><!-- End #header-search-form -->
+            <nav class="navbar navbar-white animated-dropdown navbar-smaller btt-dropdown" role="navigation">
+                <div class="container">
+                    <div class="navbar-header" style="margin-left:-200px;">
+                        <button type="button" class="navbar-toggle pull-right collapsed" data-toggle="collapse" data-target="#main-navbar-container">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand clear-padding-left text-uppercase" href="index.html" title="Boss - Multipurpose Premium Html5 Template">Malta Street Shufflers</a>
+                        <!--<button type="button" class="navbar-btn btn-icon pull-right last visible-sm visible-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>-->
+                    </div><!-- End .navbar-header -->
+                    <div class="collapse navbar-collapse" id="main-navbar-container">
+                        @*<button type="button" class="navbar-btn btn-icon navbar-left last  hidden-sm hidden-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>*@
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="dropdown active megamenu-container">
+                                <a href="#top" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home<span class="angle"></span></a>
+                                <div class="dropdown-menu megamenu" role="menu">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <ul>
+                                                    <li><a href="index.html">Home - Version 1</a></li>
+                                                    <li><a href="index2.html">Home - Version 2</a></li>
+                                                    <li><a href="index3.html">Home - Version 3</a></li>
+                                                    <li><a href="index4.html">Home - Version 4</a></li>
+                                                    <li><a href="index5.html">Home - Version 5</a></li>
+                                                    <li><a href="index6.html">Home - Version 6</a></li>
+                                                    <li><a href="index7.html">Home - Version 7</a></li>
+                                                    <li><a href="index8.html">Home - Version 8</a></li>
+                                                    <li><a href="index9.html">Home - Version 9</a></li>
+                                                    <li><a href="index10.html">Home - Version 10</a></li>
+                                                </ul>
+                                            </div><!-- End .col-sm-3 -->
+                                            <div class="col-sm-3">
+                                                <ul>
+                                                    <li><a href="index11.html">Home - Version 11</a></li>
+                                                    <li><a href="index12.html">Home - Version 12</a></li>
+                                                    <li><a href="index13.html">Home - Portfolio 1</a></li>
+                                                    <li><a href="index14.html">Home - Portfolio 2</a></li>
+                                                    <li><a href="index15.html">Home - Portfolio 3</a></li>
+                                                    <li><a href="index16.html">Home - Portfolio 4</a></li>
+                                                    <li><a href="index17.html">Home - Portfolio 5</a></li>
+                                                    <li><a href="index18.html">Home - Portfolio 6</a></li>
+                                                    <li><a href="index19.html">Home - Portfolio 7</a></li>
+                                                    <li><a href="index20.html">Home - Blog 1</a></li>
+                                                </ul>
+                                            </div><!-- End .col-sm-3 -->
+                                            <div class="col-sm-3">
+                                                <ul>
+                                                    <li><a href="index21.html">Home - Blog 2</a></li>
+                                                    <li><a href="index22.html">Home - Blog 3</a></li>
+                                                    <li><a href="index23.html">Home - Magazine 1</a></li>
+                                                    <li><a href="index24.html">Home - Magazine 2</a></li>
+                                                    <li><a href="index25.html">Home - Shop 1</a></li>
+                                                    <li><a href="index26.html">Home - Shop 2</a></li>
+                                                    <li><a href="index27.html">Home - Shop 3</a></li>
+                                                    <li><a href="index28.html">Home - Shop 4</a></li>
+                                                    <li><a href="index29.html">Home - Landing 1</a></li>
+                                                    <li><a href="index30.html">Home - Landing 2</a></li>
+                                                </ul>
+                                            </div><!-- End .col-sm-3 -->
+                                            <div class="col-sm-3">
+                                                <ul>
+                                                    <li><a href="index31.html">Home - Landing 3</a></li>
+                                                    <li><a href="index32.html">Home - Onepage 1</a></li>
+                                                    <li><a href="index33.html">Home - Onepage 2</a></li>
+                                                    <li><a href="index34.html">Home - Onepage 3</a></li>
+                                                    <li><a href="index35.html">Home - Onepage 4</a></li>
+                                                </ul>
+                                            </div><!-- End .col-sm-3 -->
+                                        </div><!-- End .row -->
+                                    </div><!-- End .container -->
+                                </div><!-- End .megamenu -->
+                            </li>
+                            <li><a href="#aboutus">About Us</a></li>
+                            <li><a href="#numbers">Numbers</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li class="visible-lg"><a href="//wrapbootstrap.com/user/eony" target="_blank">Buy Now!</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header><!-- End #header -->
+            @RenderBody()
+            <footer id="footer" class="footer-inverse" role="contentinfo">
+                <!--Insert Footer Code here.-->
+                <div id="footer-inner" class="no-padding-bt-lg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 main-widget">
+                                <div class="widget">
+                                    <div class="corporate-widget">
+                                        <span class="footer-logo">BOSS</span><!-- End .footer-logo -->
+                                        <p>We are a creative company, who works with passion and love. We provide the best services you need. We help you to get better...</p>
+
+                                        <address>
+                                            Written by <a href="mailto:puffde@gmail.com">Eon Dean</a>.<br>
+                                            Visit us: <a href="//www.eonythemes.com">Eonythemes.com</a><br>
+                                            Email: <a href="mailto:puffde@gmail.com">puffde@gmail.com</a><br>
+                                            Box 26010, Eskisehir - Turkey<br><br>
+                                            <abbr title="Templates and Themes">EonyThemes</abbr> &copy;
+                                        </address>
+
+                                        <span class="social-icons-label">Find Us at:</span>
+                                        <div class="social-icons">
+                                            <a href="#" class="social-icon icon-facebook" title="Facebook">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" class="social-icon icon-twitter" title="Twitter">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="#" class="social-icon icon-google-plus" title="Google Plus">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                            <a href="#" class="social-icon icon-skype" title="Skype">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                            <a href="#" class="social-icon icon-linkedin" title="Linkedin">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </div><!-- End .social-icons -->
+
+                                    </div><!-- End corporate-widget -->
+                                </div><!-- End .widget -->
+                            </div><!-- End .col-md-3 -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget">
+                                    <h4>Categories</h4>
+                                    <ul class="links">
+                                        <li><a href=""><i class="fa fa-angle-right"></i>Templates (10)</a></li>
+                                        <li><a href=""><i class="fa fa-angle-right"></i>Business (8)</a></li>
+                                        <li><a href=""><i class="fa fa-angle-right"></i>Corporate (7)</a></li>
+                                        <li><a href=""><i class="fa fa-angle-right"></i>Wordpress Themes (5)</a></li>
+                                        <li><a href=""><i class="fa fa-angle-right"></i>Wordpress Plugins (4)</a></li>
+                                        <li><a href=""><i class="fa fa-angle-right"></i>Bootstrap Components (14)</a></li>
+                                    </ul>
+                                </div><!-- End .widget -->
+
+                                <div class="widget">
+                                    <h4>TagCloud</h4>
+                                    <div class="tagcloud clearfix">
+                                        <a href="#">Bootstrap</a>
+                                        <a href="#">Wordpress</a>
+                                        <a href="#">Html5</a>
+                                        <a href="#">Css3</a>
+                                        <a href="#">Jquery</a>
+                                        <a href="#">Multipurpose</a>
+                                        <a href="#">Corporate</a>
+                                        <a href="#">Creative</a>
+                                    </div><!-- End .tagcloud -->
+                                </div><!-- End .widget -->
+                            </div><!-- End .col-md-3 -->
+
+                            <div class="clearfix visible-sm"></div><!-- End .clearfix -->
+
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget">
+                                    <h4>Twitter Feed</h4>
+                                    <div class="twitter-feed-widget">
+
+                                    </div><!-- End .twitter-feed-widget -->
+                                </div><!-- End .tagcloud -->
+                            </div><!-- End .col-md-3 -->
+
+                            <div class="col-md-3 col-sm-6">
+                                <div class="widget">
+                                    <h4>Flickr Feed</h4>
+                                    <ul class="flickr-widget flickr-widget-two clearfix"></ul>
+                                </div><!-- End .widget -->
+                                <div class="widget">
+                                    <h4>Newsletter</h4>
+                                    <div class="newsletter-widget">
+                                        <p>Join our newsletter and follow the latest trends of bootstrap.</p>
+                                        <form action="#" id="newsletter-widget-form">
+                                            <input type="email" class="form-control" placeholder="Join our newsletter..." required>
+                                            <button type="submit" title="Join Now!" class="btn btn-custom"><i class="fa fa-envelope"></i></button>
+                                        </form>
+                                    </div><!-- End .newsletter-widget -->
+                                </div><!-- End .widget -->
+                            </div><!-- End .col-md-3 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End #footer-inner -->
+                <div id="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-push-6">
+                                <ul class="footer-menu">
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="#">Search</a></li>
+                                    <li><a href="faqs.html">Faqs</a></li>
+                                    <li><a href="knowledge.html">Knowledge</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div><!-- End .col-md-6 -->
+                            <div class="col-md-6 col-md-pull-6">
+                                <p class="copyright">Designed and Developed by Eon.  All rights reserved. &copy; <a href="#">www.eonythemes.com</a></p>
+                            </div><!-- End .col-md-6 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End #footer-bottom -->
+            </footer>
     </div>
+    <script>
+        (function () {
+            "use strict";
+
+            // Slider Revolution
+            jQuery('#revslider').revolution({
+                delay:8000,
+                startwidth:1200,
+                startheight:600,
+                fullWidth:"on",
+                fullScreen:"on",
+                hideTimerBar: "on",
+                spinner:"spinner4",
+                fullScreenOffsetContainer: "#header",
+                navigationStyle: "preview4",
+                soloArrowLeftHOffset:20,
+                soloArrowRightHOffset:20
+            });
+
+            // Google Map
+            if (document.getElementById("map")) {
+                var locations = [
+                    ['<div class="map-info-box"><ul class="contact-info-list"><li><span><i class="fa fa-home fa-fw"></i></span> Mimar Sinan Mh., Konak/İzmir, Türkiye</li><li><span><i class="fa fa-phone fa-fw"></i></span> +90 0 (232) 324 11 83</li></ul></div>', 38.396652, 27.090560, 9]
+                ];
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 13,
+                    center: new google.maps.LatLng(38.395592, 27.102122),
+                    scrollwheel: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+                });
+
+                var infowindow = new google.maps.InfoWindow();
+
+
+                var marker, i;
+
+                for (i = 0; i < locations.length; i++) {
+                  marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: 'images/pin.png',
+                  });
+
+                  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                      infowindow.setContent(locations[i][0]);
+                      infowindow.open(map, marker);
+                    }
+                  })(marker, i));
+                }
+            }
+
+        }());
+    </script>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
