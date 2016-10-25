@@ -24,7 +24,7 @@ namespace MSS.MVC.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            ViewBag.isIndex = false;
             return View();
         }
     }
