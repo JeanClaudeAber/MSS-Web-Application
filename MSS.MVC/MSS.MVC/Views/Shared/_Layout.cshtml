@@ -1,4 +1,5 @@
 ﻿@{
+<!--JUMBOTRON SLIDER-->
     if (ViewBag.isIndex)
     {
         <section class="section home-section" id="home">
@@ -177,9 +178,7 @@
     <title>MSS - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/bossScripts")
+
 
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -192,8 +191,11 @@
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
 
+
+
     <!-- Favicon and Apple Icons -->
     <link rel="icon" type="image/png" href="../MSS Images/favicon.png">
+    <!--replace the two images below with the same favicon - different sizes-->
     <link rel="apple-touch-icon" sizes="57x57" href="../Boss Theme Files/images/icons/faviconx57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../Boss Theme Files/images/icons/faviconx72.png">
 
@@ -218,7 +220,8 @@
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand clear-padding-left text-uppercase" href="index.html" title="Boss - Multipurpose Premium Html5 Template">Malta Street Shufflers</a>
+                    <div class="navbar-brand clear-padding-left text-uppercase">Malta Street Shufflers</div>
+                        @*<a class="navbar-brand clear-padding-left text-uppercase" href="index.html" title="Boss - Multipurpose Premium Html5 Template">Malta Street Shufflers</a>*@
                         <!--<button type="button" class="navbar-btn btn-icon pull-right last visible-sm visible-xs" data-toggle="collapse" data-target="#header-search-form"><i class="fa fa-search"></i></button>-->
                     </div><!-- End .navbar-header -->
                     <div class="collapse navbar-collapse" id="main-navbar-container">
@@ -416,9 +419,73 @@
                 </div><!-- End #footer-bottom -->
             </footer>
     </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/bossScripts")
+    <script>
+        $(document).ready(function () {
+            if (window.width <= 600) {
+                $('.navbar-brand clear-padding-left text-uppercase').replaceWith('<div class="navbar-brand clear-padding-left text-uppercase">MSS</div>');
+            }
+        });
+
+    (function () {
+        "use strict";
+
+        // Slider Revolution
+        jQuery("#revslider").revolution({
+            delay: 8000,
+            startwidth: 1200,
+            startheight: 600,
+            fullWidth: "on",
+            fullScreen: "on",
+            hideTimerBar: "on",
+            spinner: "spinner4",
+            fullScreenOffsetContainer: "#header",
+            navigationStyle: "preview4",
+            soloArrowLeftHOffset: 20,
+            soloArrowRightHOffset: 20
+        });
+
+        // Google Map
+        if (document.getElementById("map")) {
+            var locations = [
+                ['<div class="map-info-box"><ul class="contact-info-list"><li><span><i class="fa fa-home fa-fw"></i></span> Mimar Sinan Mh., Konak/İzmir, Türkiye</li><li><span><i class="fa fa-phone fa-fw"></i></span> +90 0 (232) 324 11 83</li></ul></div>', 38.396652, 27.090560, 9]
+            ];
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: new google.maps.LatLng(38.395592, 27.102122),
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+            });
+
+            var infowindow = new google.maps.InfoWindow();
 
 
+            var marker, i;
 
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                    animation: google.maps.Animation.DROP,
+                    icon: 'images/pin.png',
+                });
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+        }
+
+    }());
+
+    </script>
 
     @RenderSection("scripts", required: false)
 </body>
