@@ -1,5 +1,43 @@
-﻿@{
-<!--JUMBOTRON SLIDER-->
+﻿<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html>
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSS - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Goole Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600italic,700italic,600,800,300,700,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="icon" type="image/png" href="../MSS Images/favicon.png">
+    <!--replace the two images below with the same favicon - different sizes-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../Boss Theme Files/images/icons/faviconx57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Boss Theme Files/images/icons/faviconx72.png">
+
+    <!-- Modernizr -->
+    <script src="../Boss Theme Files/js/modernizr.js"></script>
+    <!--- jQuery -->
+    <script src="../Boss Theme Files/js/jquery.min.js"></script>
+    <!-- Queryloader -->
+    <script src="../Boss Theme Files/js/queryloader2.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#main-navbar-container">
+    @{
+    <!--JUMBOTRON SLIDER-->
     if (ViewBag.isIndex)
     {
         <section class="section home-section" id="home">
@@ -165,45 +203,10 @@
             </div><!-- End #revslider-container -->
         </section>
     }
-}
+    }
 
-<!DOCTYPE html>
-<!--[if IE 9]> <html class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html>
- <!--<![endif]-->
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSS - @ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
-
-    <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Goole Fonts-->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700,900,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,400italic,600italic,700italic,600,800,300,700,800italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-
-
-
-
-    <!-- Favicon and Apple Icons -->
-    <link rel="icon" type="image/png" href="../MSS Images/favicon.png">
-    <!--replace the two images below with the same favicon - different sizes-->
-    <link rel="apple-touch-icon" sizes="57x57" href="../Boss Theme Files/images/icons/faviconx57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../Boss Theme Files/images/icons/faviconx72.png">
-
-</head>
-<body>
     <div id="wrapper">
-        
-        <!--HEADER code-->
+    <!--HEADER code-->
         <header id="header" class="sticky-menu" role="banner">
             <div class="collapse navbar-white" id="header-search-form">
                 <div class="container">
