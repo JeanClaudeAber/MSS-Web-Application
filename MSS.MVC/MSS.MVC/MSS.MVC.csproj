@@ -805,13 +805,14 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
-    <Content Include="Custom Scripts\myScripts.js" />
-    <Content Include="Custom Styles\myStyles.css" />
+    <Content Include="CustomScripts\myScripts.js" />
+    <Content Include="CustomStyles\myStyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="MSS Images\11987123_10153627895523147_874921116926024854_n.jpg" />
+    <Content Include="MSS Images\cd-top-arrow.svg" />
     <Content Include="MSS Images\DSC_0018.JPG" />
     <Content Include="MSS Images\DSC_0030.JPG" />
     <Content Include="MSS Images\DSC_0036.JPG" />
