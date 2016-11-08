@@ -7,9 +7,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSS - @ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/css/animate.css">
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/revslider/revslider-index33.css">
+    <link rel="stylesheet" href="~/Content/css/colors/darkblue.css">
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/css/customStyles/myStyles.css">
 
+    <!-- Modernizr -->
+    <script src="~/Content/js/modernizr.js"></script>
 
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,20 +31,11 @@
     <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
     <!-- Favicon and Apple Icons -->
-    <link rel="icon" type="image/png" href="../MSS Images/favicon.png">
-    <!--replace the two images below with the same favicon - different sizes-->
-    <link rel="apple-touch-icon" sizes="57x57" href="../BossThemeFiles/images/icons/faviconx57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../BossThemeFiles/images/icons/faviconx72.png">
-
-    <!-- Modernizr -->
-    <script src="../BossThemeFiles/js/modernizr.js"></script>
+    <link rel="icon" type="image/png" href="~/Content/images/favicon.png">
     <!--- jQuery -->
-    <script src="../BossThemeFiles/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery.min.js"></script>
     <!-- Queryloader -->
-    <script src="../BossThemeFiles/js/queryloader2.min.js"></script>
-    
-    <!--Font-Awesome-->
-    <script src="https://use.fontawesome.com/7968819105.js"></script>
+    <script src="~/Content/js/queryloader2.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#main-navbar-container">
     @{
@@ -47,9 +46,9 @@
             <div id="revslider-container">
                 <div id="revslider">
                     <ul>
-                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Boss Template" data-thumb="../MSS Images/sea.jpg">
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Boss Template" data-thumb="~/Content/images/homesliders/index33/slide1.jpg">
                             <!-- background image -->
-                            <img src="../MSS Images/DSC_0036.jpg" alt="Jumbotron Image" data-lazyload="../MSS Images/sea.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <img src="~/Content/images/revslider/dummy.png" alt="Jumbotron Image" data-lazyload="~/Content/images/sea.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                             <div class="tp-caption rev-subtitle customin customout"
                                  data-x="0"
                                  data-y="167"
@@ -99,9 +98,9 @@
                                 <a href="#" class="btn btn-white no-radius min-width">Check it Out!</a>
                             </div>
                         </li>
-                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="New &amp; Unique" data-thumb="../MSS Images/luzzu.jpg">
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="New &amp; Unique" data-thumb="~/Content/images/luzzu.jpg">
                             <!-- background image -->
-                            <img src="../BossThemeFiles/images/revslider/dummy.png" alt="slidebg1" data-lazyload="../MSS Images/luzzu.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <img src="~/Content/images/luzzu.jpg" alt="slidebg1" data-lazyload="~/Content/images/luzzu.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                             <div class="tp-caption rev-subtitle lft ltt"
                                  data-x="center"
                                  data-y="167"
@@ -148,9 +147,9 @@
                                 <a href="#" class="btn btn-white no-radius min-width">Subscribe Now!</a>
                             </div>
                         </li>
-                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Boss Template" data-thumb="../MSS Images/maltaharbour.jpg">
+                        <li data-transition="fade" data-slotamount="8" data-masterspeed="800" data-title="Boss Template" data-thumb="~/Content/images/maltaharbour.jpg">
                             <!-- background image -->
-                            <img src="../BossThemeFiles/images/revslider/dummy.png" alt="slidebg1" data-lazyload="../MSS Images/maltaharbour.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <img src="~/Content/images/maltaharbour.jpg" alt="slidebg1" data-lazyload="~/Content/images/maltaharbour.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                             <div class="tp-caption rev-subtitle customin customout"
                                  data-x="right"
                                  data-y="167"
@@ -193,7 +192,7 @@
                 </div><!-- End #revslider -->
             </div><!-- End #revslider-container -->
         </section>
-    }
+        }
     }
 
     <div id="wrapper">
@@ -303,7 +302,7 @@
                             <div class="col-md-3 col-sm-6 main-widget">
                                 <div class="widget">
                                     <div class="corporate-widget">
-                                        <span class="footer-logo">BOSS</span><!-- End .footer-logo -->
+                                        <span class="footer-logo">MSS</span><!-- End .footer-logo -->
                                         <p>We are a creative company, who works with passion and love. We provide the best services you need. We help you to get better...</p>
 
                                         <address>
@@ -434,9 +433,24 @@
                 </div><!-- End #footer-bottom -->
             </footer>
     </div>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/bossScripts")
+    <script src="~/Content/js/bootstrap.js"></script>
+    <script src="~/Content/js/respond.js"></script>
+
+    <script src="~/Content/js/jquery.hoverIntent.min.js"></script>
+    <script src="~/Content/js/jquery.nicescroll.min.js"></script>
+    <script src="~/Content/js/waypoints.min.js"></script>
+    <script src="~/Content/js/waypoints-sticky.min.js"></script>
+    <script src="~/Content/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/Content/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <script src="~/Content/js/isotope.pkgd.min.js"></script>
+    <script src="~/Content/js/skrollr.min.js"></script>
+    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/js/jquery.countTo.js"></script>
+    <script src="~/Content/js/jquery.validate.min.js"></script>
+    <script src="~/Content/js/contact.js"></script>
+    <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/customScripts/myScripts.js"></script>
     <script>
         $(document).ready(function () {
             if (window.width <= 600) {
