@@ -336,6 +336,7 @@
     <Content Include="Content\images\banners\index28\banner3.jpg" />
     <Content Include="Content\images\banners\widget-banner1.jpg" />
     <Content Include="Content\images\banners\widget-banner2.jpg" />
+    <Content Include="Content\images\homesliders\index33\background.jpg" />
     <Content Include="Content\images\homesliders\index33\black.jpg" />
     <Content Include="Content\images\blog\dean.jpg" />
     <Content Include="Content\images\blog\eon.jpg" />
@@ -455,9 +456,11 @@
     <Content Include="Content\images\homesliders\index2\slide2.jpg" />
     <Content Include="Content\images\homesliders\index32\slide1.jpg" />
     <Content Include="Content\images\homesliders\index32\slide2.jpg" />
+    <Content Include="Content\images\homesliders\index33\dark.jpg" />
     <Content Include="Content\images\homesliders\index33\slide1.jpg" />
     <Content Include="Content\images\homesliders\index33\slide2.jpg" />
     <Content Include="Content\images\homesliders\index33\slide3.jpg" />
+    <Content Include="Content\images\homesliders\index33\wallpaper.jpg" />
     <Content Include="Content\images\homesliders\index34\slide1.jpg" />
     <Content Include="Content\images\homesliders\index34\slide2.jpg" />
     <Content Include="Content\images\homesliders\index3\slide1.jpg" />
