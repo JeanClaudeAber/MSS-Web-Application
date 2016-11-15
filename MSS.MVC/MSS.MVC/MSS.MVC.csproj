@@ -193,6 +193,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -260,6 +261,7 @@
     <Content Include="Content\images\02.jpg" />
     <Content Include="Content\images\03.jpg" />
     <Content Include="Content\images\11987123_10153627895523147_874921116926024854_n.jpg" />
+    <Content Include="Content\images\12402067_10153848710074464_5234172330987145564_o.jpg" />
     <Content Include="Content\images\404bg.jpg" />
     <Content Include="Content\images\aboutsliders\aboutme\slide1.jpg" />
     <Content Include="Content\images\aboutsliders\aboutme\slide2.jpg" />
@@ -336,6 +338,7 @@
     <Content Include="Content\images\banners\index28\banner3.jpg" />
     <Content Include="Content\images\banners\widget-banner1.jpg" />
     <Content Include="Content\images\banners\widget-banner2.jpg" />
+    <Content Include="Content\images\coming-soon.jpg" />
     <Content Include="Content\images\homesliders\index33\background.jpg" />
     <Content Include="Content\images\homesliders\index33\black.jpg" />
     <Content Include="Content\images\blog\dean.jpg" />
@@ -409,7 +412,6 @@
     <Content Include="Content\images\clients\company9.jpg" />
     <Content Include="Content\images\college.jpg" />
     <Content Include="Content\images\college.png" />
-    <Content Include="Content\images\DSC_0018.JPG" />
     <Content Include="Content\images\DSC_0030.JPG" />
     <Content Include="Content\images\DSC_0036.JPG" />
     <Content Include="Content\images\DSC_0042.JPG" />
@@ -882,6 +884,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Videos\AllVideos.cshtml" />
+    <Content Include="Views\Error404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
